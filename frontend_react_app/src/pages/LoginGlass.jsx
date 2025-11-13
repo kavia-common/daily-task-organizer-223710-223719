@@ -3,55 +3,70 @@ import React from 'react';
 /**
  * PUBLIC_INTERFACE
  * LoginGlass
- * A React component that reproduces the "Glass Effect Login Page - Original (2:173)" static design
- * using the provided CSS tokens and styles. This component is intentionally minimal and keeps
- * inline styles where the original asset encoded absolute positioning.
- *
- * Notes:
- * - Styles are imported from the assets directory. They are largely self-contained with prefixed classes.
- * - There are no figmaimages referenced in the provided HTML; if added later, place images under public/assets and reference as /assets/filename.
+ * Accessible, responsive glass-morphism login screen aligned with
+ * "Glass Effect Login Page - Original (2:173)".
  */
 import '../assets/common.css';
 import '../assets/glass-effect-login-page-original-2-173.css';
 
 // PUBLIC_INTERFACE
 function LoginGlass() {
-  /** Render the static layout using JSX (no inline HTML strings). */
   return (
-    <div className="login-glass-wrapper" style={{ display: 'flex', justifyContent: 'center', padding: '16px' }}>
-      <div className="screen-glass-effect-login-page-original-2-173" id="screen-root" role="main" aria-label="Login screen">
-        <h1 className="title" style={{ left: '32px', top: '120px' }}>Welcome Back</h1>
+    <div className="screen-glass-effect-login-page-original-2-173" id="screen-root">
+      {/* Decorative shapes approximating the PNG */}
+      <div className="blob blob--left" aria-hidden="true" />
+      <div className="blob blob--right" aria-hidden="true" />
+      <div className="blob blob--bottom" aria-hidden="true" />
 
-        <input
-          className="input-glass"
-          type="email"
-          placeholder="Email"
-          style={{ left: '32px', top: '220px', width: '366px', height: '56px' }}
-          aria-label="Email"
-          autoComplete="username"
-        />
-        <input
-          className="input-glass"
-          type="password"
-          placeholder="Password"
-          style={{ left: '32px', top: '292px', width: '366px', height: '56px' }}
-          aria-label="Password"
-          autoComplete="current-password"
-        />
-        <button
-          className="btn-primary"
-          type="button"
-          style={{ left: '32px', top: '372px', width: '366px', height: '56px' }}
-          aria-label="Login"
-          onClick={() => {
-            // Placeholder handler for now
-            // eslint-disable-next-line no-alert
-            alert('Login clicked (demo)');
-          }}
-        >
-          Login
-        </button>
-      </div>
+      <main className="glass-card" role="main" aria-label="Login form">
+        <header className="glass-header">
+          <div className="brand" aria-label="Brand placeholder">Your logo</div>
+        </header>
+
+        <h1 className="title">Login</h1>
+
+        <form className="glass-form" action="#" method="post" aria-describedby="form-help">
+          <div>
+            <label className="label" htmlFor="email">Email</label>
+            <input id="email" name="email" className="input" type="email" placeholder="Email" autoComplete="username" required />
+          </div>
+          <div>
+            <label className="label" htmlFor="password">Password</label>
+            <input id="password" name="password" className="input" type="password" placeholder="Password" autoComplete="current-password" required />
+          </div>
+
+          <div className="form-footer">
+            <span id="form-help">Use your account to sign in.</span>
+            <a href="#forgot" aria-label="Forgot your password link">Forgot Password?</a>
+          </div>
+
+          <button className="btn-primary" type="submit" aria-label="Sign in">
+            Sign in
+          </button>
+
+          <div className="divider" role="separator" aria-label="Or continue with">Or continue with</div>
+
+          <div className="social-row">
+            <button className="social-btn" type="button" aria-label="Continue with Google">
+              <img src="/assets/figmaimages/google.svg" width="18" height="18" loading="lazy" alt="" aria-hidden="true" />
+              Google
+            </button>
+            <button className="social-btn" type="button" aria-label="Continue with Apple">
+              <img src="/assets/figmaimages/apple.svg" width="18" height="18" loading="lazy" alt="" aria-hidden="true" />
+              Apple
+            </button>
+            <button className="social-btn" type="button" aria-label="Continue with Facebook">
+              <img src="/assets/figmaimages/facebook.svg" width="18" height="18" loading="lazy" alt="" aria-hidden="true" />
+              Facebook
+            </button>
+          </div>
+
+          <div className="form-footer" style={{ justifyContent: 'center', gap: 6 }}>
+            <span>Don’t have an account?</span>
+            <a href="#register" aria-label="Register link">Register for free</a>
+          </div>
+        </form>
+      </main>
     </div>
   );
 }

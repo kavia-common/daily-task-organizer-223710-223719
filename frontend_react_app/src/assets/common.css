@@ -194,3 +194,9 @@ img { display: block; }
 .u-rounded-28 { border-radius: var(--radius-28-4583); }
 .u-rounded-40 { border-radius: var(--radius-40); }
 .u-rounded-full { border-radius: 9999px; }
+
+/* Simple invalid state used by progressive enhancement JS */
+.is-invalid {
+  outline: 2px solid #ff6d66;
+  outline-offset: 2px;
+}

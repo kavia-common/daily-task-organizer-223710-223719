@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Glass Effect Login Page - Original (2:173)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./common.css" rel="stylesheet">
+  <link href="./glass-effect-login-page-original-2-173.css" rel="stylesheet">
+</head>
+<body>
+  <div class="screen-glass-effect-login-page-original-2-173" id="screen-root">
+    <!-- Decorative shapes approximating the PNG (hidden from assistive tech) -->
+    <div class="blob blob--left" aria-hidden="true"></div>
+    <div class="blob blob--right" aria-hidden="true"></div>
+    <div class="blob blob--bottom" aria-hidden="true"></div>
+
+    <main class="glass-card" role="main" aria-label="Login form">
+      <header class="glass-header">
+        <div class="brand" aria-label="Brand placeholder">Your logo</div>
+      </header>
+
+      <h1 class="title">Login</h1>
+
+      <form class="glass-form" action="#" method="post" aria-describedby="form-help">
+        <div>
+          <label class="label" for="email">Email</label>
+          <input id="email" name="email" class="input" type="email" placeholder="Email" autocomplete="username" required />
+        </div>
+        <div>
+          <label class="label" for="password">Password</label>
+          <input id="password" name="password" class="input" type="password" placeholder="Password" autocomplete="current-password" required />
+        </div>
+
+        <div class="form-footer">
+          <span id="form-help">Use your account to sign in.</span>
+          <a href="#" aria-label="Forgot your password link">Forgot Password?</a>
+        </div>
+
+        <button class="btn-primary" type="submit" aria-label="Sign in">
+          Sign in
+        </button>
+
+        <div class="divider" role="separator" aria-label="Or continue with">Or continue with</div>
+
+        <div class="social-row">
+          <button class="social-btn" type="button" aria-label="Continue with Google">
+            <img src="/assets/figmaimages/google.svg" width="18" height="18" loading="lazy" alt="" aria-hidden="true" />
+            Google
+          </button>
+          <button class="social-btn" type="button" aria-label="Continue with Apple">
+            <img src="/assets/figmaimages/apple.svg" width="18" height="18" loading="lazy" alt="" aria-hidden="true" />
+            Apple
+          </button>
+          <button class="social-btn" type="button" aria-label="Continue with Facebook">
+            <img src="/assets/figmaimages/facebook.svg" width="18" height="18" loading="lazy" alt="" aria-hidden="true" />
+            Facebook
+          </button>
+        </div>
+
+        <div class="form-footer" style="justify-content:center; gap:6px;">
+          <span>Don’t have an account?</span>
+          <a href="#" aria-label="Register link">Register for free</a>
+        </div>
+      </form>
+    </main>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
