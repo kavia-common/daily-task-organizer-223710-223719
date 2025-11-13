@@ -1,0 +1,48 @@
+@import url("./common.css");
+
+/* Screen container */
+.screen-glass-effect-login-page-original-2-173 {
+  position: relative;
+  width: 430px; /* placeholder until YAML parsed */
+  height: 932px; /* placeholder until YAML parsed */
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(88,130,193,1) 0%, rgba(0,52,101,1) 100%); /* indicative background until exact parsed */
+  font-family: var(--typo-7-family, "Gilroy"), system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--color-ffffff);
+}
+
+/* Example reusable tokens for inputs/buttons to be mapped after parsing */
+.input-glass {
+  position: absolute;
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.25);
+  color: var(--color-ffffff);
+  border-radius: var(--radius-24);
+  padding: 12px 16px;
+}
+
+.btn-primary {
+  position: absolute;
+  background-color: var(--color-059be5);
+  color: var(--color-ffffff);
+  border: none;
+  border-radius: var(--radius-28-4583);
+  padding: 14px 18px;
+  font-family: var(--typo-8-family);
+  font-size: var(--typo-8-size);
+  font-weight: var(--typo-8-weight);
+  line-height: var(--typo-8-line-height);
+  box-shadow: var(--shadow-6);
+  cursor: pointer;
+}
+
+.title {
+  position: absolute;
+  font-family: var(--typo-22-family);
+  font-size: var(--typo-22-size);
+  font-weight: var(--typo-22-weight);
+  line-height: var(--typo-22-line-height);
+  color: var(--color-ffffff);
+}

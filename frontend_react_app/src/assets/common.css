@@ -1,0 +1,196 @@
+:root {
+  /* Colors */
+  --color-5882c1: #5882c1;
+  --color-ffffff: #ffffff;
+  --color-bcbec0: #bcbec0;
+  --color-c7d2d6: #c7d2d6;
+  --color-003465: #003465;
+  --color-ffc107: #ffc107;
+  --color-ff3d00: #ff3d00;
+  --color-4caf50: #4caf50;
+  --color-1976d2: #1976d2;
+  --color-000000: #000000;
+  --color-059be5: #059be5;
+  --color-bd0c47: #bd0c47;
+  --color-b1b8ca: #b1b8ca;
+  --color-a0c6f4: #a0c6f4;
+  --color-2a1e17: #2a1e17;
+  --color-f9865f: #f9865f;
+  --color-2a1e33: #2a1e33;
+  --color-7595ec: #7595ec;
+  --color-ff8a66: #ff8a66;
+  --color-fff7c9: #fff7c9;
+  --color-ff6d66: #ff6d66;
+  --color-fad8b0: #fad8b0;
+  --color-c6cbcb: #c6cbcb;
+  --color-fff7dc: #fff7dc;
+  --color-ffe1c0: #ffe1c0;
+  --color-91ba83: #91ba83;
+  --color-96bd89: #96bd89;
+
+  /* Typography tokens (family, size, weight, line-height, align, letter-spacing; plus color when available) */
+  --typo-0-family: "Gilroy-Bold"; --typo-0-size: 24px; --typo-0-weight: 400; --typo-0-line-height: 29.712px; --typo-0-letter-spacing: 0px; --typo-0-text-align: left;
+  --typo-1-family: "Gilroy-Medium"; --typo-1-size: 13px; --typo-1-weight: 400; --typo-1-line-height: 15.769px; --typo-1-letter-spacing: 0px; --typo-1-text-align: left;
+  --typo-2-family: "Gilroy-Bold"; --typo-2-size: 16px; --typo-2-weight: 400; --typo-2-line-height: 19.808px; --typo-2-letter-spacing: 0px; --typo-2-text-align: left;
+  --typo-3-family: "Gilroy-Medium"; --typo-3-size: 13px; --typo-3-weight: 400; --typo-3-line-height: 15.769px; --typo-3-letter-spacing: 0px; --typo-3-text-align: center;
+  --typo-4-family: "Gilroy-Regular"; --typo-4-size: 9.960417px; --typo-4-weight: 400; --typo-4-line-height: 11.9525px; --typo-4-letter-spacing: 0px; --typo-4-text-align: center;
+  --typo-5-family: "Gilroy"; --typo-5-size: 24px; --typo-5-weight: 700; --typo-5-line-height: 29.016px; --typo-5-letter-spacing: 0px; --typo-5-text-align: left;
+  --typo-6-family: "Gilroy"; --typo-6-size: 38px; --typo-6-weight: 700; --typo-6-line-height: 45.942px; --typo-6-letter-spacing: 0px; --typo-6-text-align: left;
+  --typo-7-family: "Gilroy"; --typo-7-size: 14px; --typo-7-weight: 400; --typo-7-line-height: 16.24px; --typo-7-letter-spacing: 0px; --typo-7-text-align: left;
+  --typo-8-family: "Gilroy"; --typo-8-size: 14px; --typo-8-weight: 600; --typo-8-line-height: 16.702px; --typo-8-letter-spacing: 0px; --typo-8-text-align: left;
+  --typo-9-family: "Gilroy"; --typo-9-size: 20px; --typo-9-weight: 700; --typo-9-line-height: 24.18px; --typo-9-letter-spacing: 0px; --typo-9-text-align: left;
+  --typo-10-family: "Gilroy"; --typo-10-size: 18px; --typo-10-weight: 400; --typo-10-line-height: 20.88px; --typo-10-letter-spacing: 0px; --typo-10-text-align: left;
+  --typo-11-family: "Gilroy"; --typo-11-size: 12px; --typo-11-weight: 400; --typo-11-line-height: 13.92px; --typo-11-letter-spacing: 0px; --typo-11-text-align: left;
+  --typo-12-family: "Poppins"; --typo-12-size: 16px; --typo-12-weight: 700; --typo-12-line-height: 30.208px; --typo-12-letter-spacing: 0px; --typo-12-text-align: justified;
+  --typo-13-family: "Gilroy"; --typo-13-size: 47.748814px; --typo-13-weight: 700; --typo-13-line-height: 57.728313px; --typo-13-letter-spacing: 0px; --typo-13-text-align: left;
+  --typo-14-family: "Poppins"; --typo-14-size: 25px; --typo-14-weight: 700; --typo-14-line-height: 40.95px; --typo-14-letter-spacing: 0px; --typo-14-text-align: left;
+  /* Colorized variants (typo_15..typo_31) */
+  --typo-15-family: "Gilroy-Bold"; --typo-15-size: 24px; --typo-15-weight: 400; --typo-15-line-height: 29.712px; --typo-15-letter-spacing: 0px; --typo-15-text-align: left; --typo-15-color: var(--color-ffffff);
+  --typo-16-family: "Gilroy-Medium"; --typo-16-size: 13px; --typo-16-weight: 400; --typo-16-line-height: 15.769px; --typo-16-letter-spacing: 0px; --typo-16-text-align: left; --typo-16-color: var(--color-ffffff);
+  --typo-17-family: "Gilroy-Medium"; --typo-17-size: 13px; --typo-17-weight: 400; --typo-17-line-height: 15.769px; --typo-17-letter-spacing: 0px; --typo-17-text-align: left; --typo-17-color: var(--color-bcbec0);
+  --typo-18-family: "Gilroy-Bold"; --typo-18-size: 16px; --typo-18-weight: 400; --typo-18-line-height: 19.808px; --typo-18-letter-spacing: 0px; --typo-18-text-align: left; --typo-18-color: var(--color-ffffff);
+  --typo-19-family: "Gilroy-Medium"; --typo-19-size: 13px; --typo-19-weight: 400; --typo-19-line-height: 15.769px; --typo-19-letter-spacing: 0px; --typo-19-text-align: center; --typo-19-color: var(--color-ffffff);
+  --typo-20-family: "Gilroy-Regular"; --typo-20-size: 9.960417px; --typo-20-weight: 400; --typo-20-line-height: 11.9525px; --typo-20-letter-spacing: 0px; --typo-20-text-align: center; --typo-20-color: var(--color-ffffff);
+  --typo-21-family: "Gilroy"; --typo-21-size: 24px; --typo-21-weight: 700; --typo-21-line-height: 29.016px; --typo-21-letter-spacing: 0px; --typo-21-text-align: left; --typo-21-color: var(--color-ffffff);
+  --typo-22-family: "Gilroy"; --typo-22-size: 38px; --typo-22-weight: 700; --typo-22-line-height: 45.942px; --typo-22-letter-spacing: 0px; --typo-22-text-align: left; --typo-22-color: var(--color-ffffff);
+  --typo-23-family: "Gilroy"; --typo-23-size: 14px; --typo-23-weight: 400; --typo-23-line-height: 16.24px; --typo-23-letter-spacing: 0px; --typo-23-text-align: left; --typo-23-color: var(--color-ffffff);
+  --typo-24-family: "Gilroy"; --typo-24-size: 14px; --typo-24-weight: 600; --typo-24-line-height: 16.702px; --typo-24-letter-spacing: 0px; --typo-24-text-align: left; --typo-24-color: var(--color-ffffff);
+  --typo-25-family: "Gilroy"; --typo-25-size: 20px; --typo-25-weight: 700; --typo-25-line-height: 24.18px; --typo-25-letter-spacing: 0px; --typo-25-text-align: left; --typo-25-color: var(--color-ffffff);
+  --typo-26-family: "Gilroy"; --typo-26-size: 18px; --typo-26-weight: 400; --typo-26-line-height: 20.88px; --typo-26-letter-spacing: 0px; --typo-26-text-align: left; --typo-26-color: var(--color-ffffff);
+  --typo-27-family: "Gilroy"; --typo-27-size: 14px; --typo-27-weight: 400; --typo-27-line-height: 16.24px; --typo-27-letter-spacing: 0px; --typo-27-text-align: left; --typo-27-color: var(--color-bcbec0);
+  --typo-28-family: "Gilroy"; --typo-28-size: 12px; --typo-28-weight: 400; --typo-28-line-height: 13.92px; --typo-28-letter-spacing: 0px; --typo-28-text-align: left; --typo-28-color: var(--color-ffffff);
+  --typo-29-family: "Poppins"; --typo-29-size: 16px; --typo-29-weight: 700; --typo-29-line-height: 30.208px; --typo-29-letter-spacing: 0px; --typo-29-text-align: justified; --typo-29-color: var(--color-000000);
+  --typo-30-family: "Gilroy"; --typo-30-size: 47.748814px; --typo-30-weight: 700; --typo-30-line-height: 57.728313px; --typo-30-letter-spacing: 0px; --typo-30-text-align: left; --typo-30-color: var(--color-000000);
+  --typo-31-family: "Poppins"; --typo-31-size: 25px; --typo-31-weight: 700; --typo-31-line-height: 40.95px; --typo-31-letter-spacing: 0px; --typo-31-text-align: left; --typo-31-color: var(--color-ffffff);
+
+  /* Border radius scale */
+  --radius-5: 5px;
+  --radius-7-1146: 7.1145830154418945px;
+  --radius-10: 10px;
+  --radius-24: 24px;
+  --radius-28-4583: 28.458332061767578px;
+  --radius-40: 40px;
+  --radius-100: 100px;
+
+  /* Shadows */
+  --shadow-0: 22px 35px 91px 0 rgba(0,0,0,1);
+  --shadow-1: 89px 139px 165px 0 rgba(0,0,0,1);
+  --shadow-2: 200px 312px 223px 0 rgba(0,0,0,1);
+  --shadow-3: 355px 556px 264px 0 rgba(0,0,0,1);
+  --shadow-4: 555px 868px 288px 0 rgba(0,0,0,1);
+  --shadow-5: 0 2.8458333015441895px 10.671875px 0 rgba(0,0,0,1);
+  --shadow-6: 0 4px 15px 0 rgba(0,0,0,1);
+
+  /* Styles (backgrounds, borders) */
+  --style-0-opacity: 0.5;
+  --style-1-border-radius: var(--radius-24);
+  --style-2-background: var(--color-5882c1);
+  --style-2-border-radius: var(--radius-28-4583);
+  --style-3-background: var(--color-ffffff);
+  --style-4-background: var(--color-ffffff);
+  --style-4-border-color: var(--color-bcbec0);
+  --style-4-border-width: 0.7114583253860474px;
+  --style-4-border-radius: 5px;
+  --style-5-background: var(--color-bcbec0);
+  --style-6-background: var(--color-c7d2d6);
+  --style-6-border-radius: var(--radius-28-4583);
+  --style-7-background: var(--color-c7d2d6);
+  --style-8-background: var(--color-003465);
+  --style-8-border-radius: var(--radius-7-1146);
+  --style-9-background: var(--color-ffffff);
+  --style-9-border-color: var(--color-bcbec0);
+  --style-9-border-width: 0.7114583253860474px;
+  --style-9-border-radius: var(--radius-7-1146);
+  --style-10-background: var(--color-ffffff);
+  --style-10-border-radius: var(--radius-28-4583);
+  --style-11-background: var(--color-ffc107);
+  --style-12-background: var(--color-ff3d00);
+  --style-13-background: var(--color-4caf50);
+  --style-14-background: var(--color-1976d2);
+  --style-15-background: var(--color-000000);
+  --style-16-background: var(--color-059be5);
+  --style-16-border-radius: var(--radius-28-4583);
+  --style-17-background: var(--color-059be5);
+  --style-18-background: var(--color-ffffff);
+  --style-18-border-radius: var(--radius-40);
+  --style-19-background: var(--color-bd0c47);
+  --style-19-border-radius: 10px;
+  --style-20-background: var(--color-ffffff);
+  --style-20-border-color: var(--color-bcbec0);
+  --style-20-border-width: 1px;
+  --style-20-border-radius: 10px;
+  --style-21-background: var(--color-c7d2d6);
+  --style-21-border-radius: var(--radius-40);
+  --style-22-background: var(--color-059be5);
+  --style-22-border-radius: var(--radius-40);
+  --style-23-border-radius: var(--radius-100);
+  --style-24-background: var(--color-ffffff);
+  --style-24-border-radius: var(--radius-100);
+  --style-25-border-color: var(--color-b1b8ca);
+  --style-25-border-width: 2px;
+  --style-26-background: var(--color-a0c6f4);
+  --style-27-border-color: var(--color-2a1e17);
+  --style-27-border-width: 1px;
+  --style-28-background: var(--color-2a1e17);
+  --style-29-background: var(--color-f9865f);
+  --style-30-background: var(--color-2a1e33);
+  --style-31-background: var(--color-7595ec);
+  --style-32-background: var(--color-ff8a66);
+  --style-33-background: var(--color-fff7c9);
+  --style-34-border-color: var(--color-2a1e33);
+  --style-34-border-width: 1px;
+  --style-35-background: var(--color-ff6d66);
+  --style-36-background: var(--color-fad8b0);
+  --style-37-background: var(--color-c6cbcb);
+  --style-38-background: var(--color-fff7dc);
+  --style-39-background: var(--color-ffe1c0);
+  --style-40-background: var(--color-ffffff);
+  --style-40-border-color: var(--color-2a1e17);
+  --style-40-border-width: 1px;
+  --style-41-background: var(--color-91ba83);
+  --style-42-border-color: var(--color-2a1e17);
+  --style-42-border-width: 0.6707000136375427px;
+  --style-43-background: var(--color-96bd89);
+  --style-44-border-color: var(--color-ff6d66);
+  --style-44-border-width: 1px;
+  --style-45-border-color: var(--color-fad8b0);
+  --style-45-border-width: 1px;
+  --style-46-border-color: var(--color-a0c6f4);
+  --style-46-border-width: 1px;
+  --style-47-border-radius: var(--radius-24);
+  --style-47-shadow-0: var(--shadow-0);
+  --style-47-shadow-1: var(--shadow-1);
+  --style-47-shadow-2: var(--shadow-2);
+  --style-47-shadow-3: var(--shadow-3);
+  --style-47-shadow-4: var(--shadow-4);
+  --style-48-shadow: var(--shadow-5);
+  --style-49-shadow: var(--shadow-6);
+
+  /* Spacing scale: map representative tokens to common scale */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+}
+
+/* Base resets */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+img { display: block; }
+
+/* Utility classes for glass effect and borders, leveraging variables */
+.u-glass {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.25);
+}
+
+.u-shadow-48 { box-shadow: var(--shadow-5); }
+.u-shadow-49 { box-shadow: var(--shadow-6); }
+
+.u-rounded-24 { border-radius: var(--radius-24); }
+.u-rounded-28 { border-radius: var(--radius-28-4583); }
+.u-rounded-40 { border-radius: var(--radius-40); }
+.u-rounded-full { border-radius: 9999px; }
